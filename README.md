@@ -11,7 +11,6 @@
   <a href="https://greenkeeper.io" target="_blank"><img src="https://badges.greenkeeper.io/SlimDogs/gulp-comments-to-md.svg" alt="Greenkeeper" title="Greenkeeper"></a>
   <a href="https://standardjs.com" target="_blank"><img src="https://img.shields.io/badge/code_style-standard-brightgreen.svg" alt="Standard - JavaScript Style Guide" title="Standard - JavaScript Style Guide"></a>
   <a href="http://commitizen.github.io/cz-cli" target="_blank"><img src="https://img.shields.io/badge/commitizen-friendly-brightgreen.svg" alt="Commitizen friendly" title="Commitizen friendly"></a>
-  <a href="https://www.npmjs.com/package/gulp-comments-to-md" target="_blank"><img src="https://img.shields.io/npm/dw/gulp-comments-to-md.svg" alt="NPM Downloads" title="NPM Downloads"></a>
   <a href="https://opensource.org/licenses/MIT" target="_blank"><img src="https://img.shields.io/badge/license-MIT-blue.svg" alt="MIT License" title="MIT License"></a>
 </p>
 
@@ -19,5 +18,48 @@
 - [About](#about)
 - [Installation](#installation)
 - [How to use?](#how-to-use)
+- [Supported comments](#supported-comments)
 
-TODO
+## About
+This gulp plugin parses well formatted comments from files and generates a makup document file such as README.md
+
+## Installation
+* If you are using yarn run `yarn add gulp-comments-to-md --save`
+* If you prefer npm run `npm install gulp-comments-to-md --save`
+
+## How to use
+Once installed moddify your gulp file to include the plugin like this:
+```js
+const commentsToMd = require('gulp-comments-to-md')
+```
+
+Then define the task like this:
+```js
+gulp.task('Generate MD document', () => {
+  return gulp.src([
+      'src/**/*.scss'
+    ])
+    .pipe(commentsToMd('README.md'))
+    .pipe(gulp.dest('./'))
+})
+```
+
+1. Remember to update `src/**/*.scss` to your selected source files (any file type works)
+2. `README.md` - to your generated document (in theory it could be any file type)
+3. `./` - to folder where you want to output generated document
+
+## Supported comments
+At the moment it works perfectly with /** */ commens, like in this example:
+```scss
+/**
+ * ## Animations
+ * - [Float](#float)
+ * - [Pulse](#pulse)
+ * - [Spin](#spin)
+ */
+
+@import "animations/float";
+@import "animations/pulse";
+@import "animations/spin";
+```
+Pay attention to the detail - each inner comment line (including last one) must start with space (` `) and asterisk (`*`).
