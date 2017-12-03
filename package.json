@@ -1,4 +1,5 @@
 {
+  "version": "1.0.3",
   "name": "gulp-comments-to-md",
   "description": "Extract comments from various files and generate *.md (markup document)",
   "main": "index.js",
@@ -7,11 +8,28 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/SlimDogs/gulp-comments-to-md.git"
+    "url": "https://github.com/SlimDogs/gulp-comments-to-md.git"
   },
   "private": false,
-  "author": "Tautvydas Derzinskas <tautvydasuk@gmail.com>",
+  "author": {
+    "name": "Tautvydas Derzinskas",
+    "email": "tautvydasuk@gmail.com",
+    "url": "http://Tautvydas.info"
+  },
   "license": "MIT",
+  "keywords": [
+    "gulp",
+    "comments",
+    "markup",
+    "parse-comments",
+    "parse",
+    "read",
+    "extract",
+    "comment",
+    "md",
+    "documentation",
+    "generator"
+  ],
   "dependencies": {
     "comment-parser": "0.5.0",
     "through2": "2.0.3",
