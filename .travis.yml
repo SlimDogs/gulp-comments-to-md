@@ -1,0 +1,19 @@
+language: node_js
+node_js:
+  - "8"
+notifications:
+  email: false
+cache:
+  yarn: true
+  directories:
+    - "node_modules"
+    - ~/.npm
+cache:
+  directories:
+    - "node_modules"
+deploy:
+  provider: script
+  script: npm run semantic-release
+  skip_cleanup: true
+  on:
+    branch: master

@@ -1,0 +1,29 @@
+{
+  "name": "gulp-comments-to-md",
+  "description": "Extract comments from various files and generate *.md (markup document)",
+  "main": "index.js",
+  "scripts": {
+    "semantic-release": "semantic-release pre && npm publish && semantic-release post"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SlimDogs/gulp-comments-to-md.git"
+  },
+  "private": false,
+  "author": "Tautvydas Derzinskas <tautvydasuk@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "comment-parser": "0.5.0",
+    "through2": "2.0.3",
+    "concat-with-sourcemaps": "1.0.4"
+  },
+  "devDependencies": {
+    "cz-conventional-changelog": "2.1.0",
+    "semantic-release": "8.2.0"
+  },
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/cz-conventional-changelog"
+    }
+  }
+}
