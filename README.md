@@ -19,9 +19,43 @@
 - [Installation](#installation)
 - [How to use?](#how-to-use)
 - [Supported comments](#supported-comments)
+- [License](#license)
 
 ## About
 This gulp plugin parses well formatted comments from files and generates a makup document file such as README.md
+
+For example you have file `file-a.scss` with contents:
+```scss
+/**
+ * ### Color 1
+ * - `Is:` Red!
+ */
+
+.color-red {
+  color: red;
+}
+```
+
+And `file-b.scss` with contents:
+```scss
+/**
+ * ### Color 2
+ * - `Is:` Blue!
+ */
+
+.color-blue {
+  color: blue;
+}
+```
+
+With help of this plugin you extract comments from `file-a.scss` & `file-b.scss` and generate *.md file which in this case would contain:
+```
+### Color 1
+- `Is:` Red!
+
+### Color 2
+- `Is:` Blue!
+```
 
 ## Installation
 * If you are using yarn run `yarn add gulp-comments-to-md --save`
@@ -63,3 +97,6 @@ At the moment it works perfectly with /** */ commens, like in this example:
 @import "animations/spin";
 ```
 Pay attention to the detail - each inner comment line (including last one) must start with space (` `) and asterisk (`*`).
+
+## License
+The repository code is open-sourced software licensed under the [MIT license](https://github.com/SlimDogs/gulp-comments-to-md/blob/master/LICENSE?raw=true).
