@@ -11,9 +11,5 @@ cache:
 cache:
   directories:
     - "node_modules"
-deploy:
-  provider: script
-  script: npm run semantic-release
-  skip_cleanup: true
-  on:
-    branch: master
+after_success:
+  - test $TRAVIS_BRANCH = "master" && npm run semantic-release
