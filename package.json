@@ -32,7 +32,7 @@
   ],
   "dependencies": {
     "comment-parser": "0.5.0",
-    "through2": "2.0.3",
+    "through2": "2.0.4",
     "concat-with-sourcemaps": "1.0.5"
   },
   "devDependencies": {
