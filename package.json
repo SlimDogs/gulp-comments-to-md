@@ -33,11 +33,11 @@
   "dependencies": {
     "comment-parser": "0.5.0",
     "through2": "2.0.4",
-    "concat-with-sourcemaps": "1.0.5"
+    "concat-with-sourcemaps": "1.0.6"
   },
   "devDependencies": {
     "cz-conventional-changelog": "2.1.0",
-    "semantic-release": "12.4.0"
+    "semantic-release": "15.0.0"
   },
   "config": {
     "commitizen": {
