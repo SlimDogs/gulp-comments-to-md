@@ -36,7 +36,7 @@
     "concat-with-sourcemaps": "1.0.6"
   },
   "devDependencies": {
-    "cz-conventional-changelog": "2.1.0",
+    "cz-conventional-changelog": "3.0.0",
     "semantic-release": "15.0.0"
   },
   "config": {
