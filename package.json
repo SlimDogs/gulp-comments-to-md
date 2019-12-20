@@ -31,13 +31,13 @@
     "generator"
   ],
   "dependencies": {
-    "comment-parser": "0.5.0",
-    "through2": "2.0.4",
-    "concat-with-sourcemaps": "1.0.6"
+    "comment-parser": "0.7.2",
+    "through2": "3.0.1",
+    "concat-with-sourcemaps": "1.1.0"
   },
   "devDependencies": {
-    "cz-conventional-changelog": "2.1.0",
-    "semantic-release": "15.0.0"
+    "cz-conventional-changelog": "3.0.2",
+    "semantic-release": "15.13.31"
   },
   "config": {
     "commitizen": {
