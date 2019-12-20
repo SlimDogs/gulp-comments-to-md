@@ -4,9 +4,9 @@
 
 <p align="center">
   <a href="https://www.npmjs.com/package/gulp-comments-to-md" target="_blank"><img src="https://badge.fury.io/js/gulp-comments-to-md.svg" alt="gulp-comments-to-md version" title="gulp-comments-to-md version"></a>
-  <a href="#" target="_blank"><img src="https://travis-ci.org/SlimDogs/gulp-comments-to-md.svg?branch=master" alt="Latest CI build status" title="Latest CI build status"></a>
+  <a href="#" target="_blank"><img src="https://travis-ci.com/TautvydasDerzinskas/gulp-comments-to-md.svg?branch=master" alt="Latest CI build status" title="Latest CI build status"></a>
   <a href="https://github.com/semantic-release/semantic-release" target="_blank"><img src="https://img.shields.io/badge/%20%20%F0%9F%93%A6%F0%9F%9A%80-semantic--release-e10079.svg" alt="Semantic release" title="Semantic release"></a>
-  <a href="https://greenkeeper.io" target="_blank"><img src="https://badges.greenkeeper.io/SlimDogs/gulp-comments-to-md.svg" alt="Greenkeeper" title="Greenkeeper"></a>
+  <a href="https://greenkeeper.io" target="_blank"><img src="https://badges.greenkeeper.io/TautvydasDerzinskas/gulp-comments-to-md.svg" alt="Greenkeeper" title="Greenkeeper"></a>
   <a href="https://standardjs.com" target="_blank"><img src="https://img.shields.io/badge/code_style-standard-brightgreen.svg" alt="Standard - JavaScript Style Guide" title="Standard - JavaScript Style Guide"></a>
   <a href="http://commitizen.github.io/cz-cli" target="_blank"><img src="https://img.shields.io/badge/commitizen-friendly-brightgreen.svg" alt="Commitizen friendly" title="Commitizen friendly"></a>
   <a href="https://opensource.org/licenses/MIT" target="_blank"><img src="https://img.shields.io/badge/license-MIT-blue.svg" alt="MIT License" title="MIT License"></a>
@@ -96,4 +96,4 @@ $('.btn-toggler').on('click', () => {
 ❗ *Pay attention to the details*: each inner comment line (_including last one_) must start with space (` `) and asterisk (`*`).
 
 ## License
-The repository code is open-sourced software licensed under the [MIT license](https://github.com/SlimDogs/gulp-comments-to-md/blob/master/LICENSE?raw=true).
+The repository code is open-sourced software licensed under the [MIT license](https://github.com/TautvydasDerzinskas/gulp-comments-to-md/blob/master/LICENSE?raw=true).
