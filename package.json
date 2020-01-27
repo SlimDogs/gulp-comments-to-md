@@ -37,7 +37,7 @@
   },
   "devDependencies": {
     "cz-conventional-changelog": "3.0.2",
-    "semantic-release": "15.13.31"
+    "semantic-release": "16.0.4"
   },
   "config": {
     "commitizen": {
